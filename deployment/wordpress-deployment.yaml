@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: wordpress
   namespace: wordpress-cicd
+  labels:
+    app: wordpress
+    env: dev
 spec:
   replicas: 1
   selector:
@@ -12,6 +15,7 @@ spec:
     metadata:
       labels:
         app: wordpress
+        env: dev
     spec:
       containers:
         - name: wordpress
