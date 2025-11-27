@@ -1,5 +1,7 @@
 # 1 Project Title: Deploy a Containerized Web Application with CI/CD and Monitoring
 
+![Architecture diagram](./image.png)
+
 ## Objective
 
 Set up and deploy a simple web application (WordPress) using Docker and Kubernetes, automate its deployment through a CI/CD pipeline, and integrate basic monitoring using Prometheus and Grafana.
