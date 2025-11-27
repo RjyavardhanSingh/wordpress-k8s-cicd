@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush()
+    }
+
     environment {
         KUBECONFIG = "/var/jenkins_home/.kube/config"
         NAMESPACE = "wordpress-cicd"
